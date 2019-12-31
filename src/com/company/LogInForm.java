@@ -123,13 +123,11 @@ public class LogInForm extends JFrame {
                 password.setText("");
                 JOptionPane.showMessageDialog(LogInForm.this,
                         "Wrong login or password");
-                return;
             } else if (got_token.equals("Error")) {
                 login.setText("");
                 password.setText("");
                 JOptionPane.showMessageDialog(LogInForm.this,
                         "An error occurred");
-                return;
             } else {
                 Main.setToken(got_token);
                 dispose();
